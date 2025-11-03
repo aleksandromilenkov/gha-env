@@ -21,7 +21,7 @@ for (let attempt = 1; attempt <= 5; attempt++) {
   } catch (error) {
     console.log(`❌ Attempt ${attempt}: Failed to connect. Retrying in 3s...`);
     if (attempt === 5) {
-      console.error('❌ All attempts failed:', error);
+      console.error('❌ All attempts failed!:', error);
       process.exit(1);
     }
     await new Promise((r) => setTimeout(r, 3000));
