@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import 'dotenv/config';
 
 import db from '../data/database.js';
 
